@@ -351,4 +351,10 @@ gradients_out.SetFileName('gradients.vtu')
 gradients_out.SetInputData(output_gradients)
 gradients_out.Update()
 #
+#also create domain.dat file that keep layer ids.
+domainfile=open("layers.dat", "w+")
+for  icell in xrange(0,ncell):
+    domainfile.write("%d\n" %(10+layers[icell]))
+domainfile.close()
+
 
