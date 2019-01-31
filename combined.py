@@ -14,7 +14,7 @@
 #                 apex
 
 
-#Oguz Ziya Tikenogullari-Fall 2018-Stanford
+#Oguz Ziya Tikenogullari-2018-Stanford
 
 import vtk 
 import numpy as np
@@ -25,7 +25,7 @@ from vtk.util.numpy_support import vtk_to_numpy, numpy_to_vtk
 
 #threshold values that seperate segments
 epi_myo=0.667
-mod_end=0.333
+myo_end=0.333
 apex_mid=0.90
 mid_base=0.95
 #these values are valid for canine heart
@@ -238,7 +238,6 @@ fnameA=filenames[0]
 fnameB=filenames[1]
 fnameC=filenames[2]
 fnameD=filenames[3]
-print fnameA
 
 readerA= vtk.vtkXMLUnstructuredGridReader()
 readerB= vtk.vtkXMLUnstructuredGridReader()

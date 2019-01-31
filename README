@@ -1,0 +1,24 @@
+this is the script that takes 4 heat diffusion results
+and produces layer IDs in layers.dat file
+and fiber orientations, in fibers.vtu file
+implementations from bayer et al 2012 and perotti et al 2015
+9 layer ids are between 11-19
+diffusion result files should be result_A.vtu,...,result_D.vtu
+and temperature field should have the name HS_Temperature
+this code is only tested with simvascular's heat cond. output
+layer ids look like
+
+                 base
+              __     __ 		 
+	    /	 \ /  	\	 
+	   /	  v	 \	 
+           |  1   4   7  |
+endocardium|  2   5   8  |epicardium
+            \ 3   6   9 /
+	     \         /
+	       \     /
+                  \/  
+                 apex
+
+
+Oguz Ziya Tikenogullari-2018-Stanford
